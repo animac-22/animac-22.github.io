@@ -260,6 +260,8 @@ a.btn.bg-branco.roxo.mb-1:hover {
 
 .maid { background-image: url("../img/icon-maid.png"); }
 
+.pokemon { background-image: url("../img/icon-pokemon.png"); }
+
 .copy {
 	font-size: 22px;
     font-weight: lighter;
