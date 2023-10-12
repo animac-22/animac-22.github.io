@@ -5,3 +5,11 @@
   font-style: normal;
   font-weight: normal;
 }
+
+/* === PixelSplitter ==== */
+@font-face {
+  font-family: "PixelSplitter";
+  src:  url("../fontes/PixelSplitter-Bold.ttf") format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}

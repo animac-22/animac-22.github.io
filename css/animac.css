@@ -1,14 +1,9 @@
 :root {
-	--amarelo-claro: #FEDD99;
-	--amarelo: #FFC145;
-	--amarelo-escuro: #CC9A35;
-	--branco: #FFF;
-	--preto: #000;
-	--gagalin: "Gagalin", "Arial Black";
-    --roxo: #21043E;
-    --roxo-claro: #430269;
-    --amarelo1: #FBB14A;
-    --amarelo2: #FEE954;
+    --amarelo: #fdc716;
+    --roxo: #410072;
+    --laranja: #e16c1d;
+    --impact: "Impact";
+    --pixelsplitter: "PixelSplitter";
 }
 
 * {
@@ -16,98 +11,57 @@
 }
 
 body {
-    background: var(--roxo);
+    background: var(--amarelo);
+}
+
+.impact {
+	font-family: var(--impact);
+    text-transform: uppercase;
 }
 
 .gagalin {
-	font-family: var(--gagalin);
+    font-family: var(--gagalin);
+}
+
+.pixelsplitter {
+    font-family: var(--pixelsplitter);
 }
 
 .h6, .h5, .h4, .h3, .h2, .h1 {
     font-family: "Arial" !important;
 }
 
+.edicao-5 {
+    font-family: var(--pixelsplitter);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
 .title-home {
 	font-size: 50px;
 }
 
+a:hover {
+    transition: 0.5s all;
+    color: var(--roxo); !important;
+}
+
 h6, h5, h4, h3, h2, h1 {
-    font-family: var(--gagalin) !important;
+    font-family: var(--impact) !important;
+    text-transform: uppercase;
 }
 
-/* NOVAS CORES */
+/*BG E CORES*/
+.bg-branco { background: white !important; }
+.bg-amarelo { background: var(--amarelo); !important; }
+.bg-laranja { background: var(--laranja) !important; }
+.bg-roxo { background: var(--roxo) !important; }
 
-.bg-branco {
-    background: white !important;
-}
-
-
-.bg-roxo {
-    background: var(--roxo) !important;
-}
-
-.bg-roxo-claro {
-    background: var(--roxo-claro) !important;
-}
-
-.bg-amarelo-1 {
-    background: var(--amarelo1) !important;
-}
-
-.bg-amarelo-2 {
-    background: var(--amarelo2) !important;
-}
-
-.roxo {
-    color: var(--roxo) !important;
-}
-
-.amarelo-1 {
-    color: var(--amarelo1) !important;
-}
-
-.amarelo-2 {
-    color: var(--amarelo2) !important;
-}
-
-
-/* FIM NOVAS CORES */
-
-.bg-amarelo-escuro {
-	background: var(--amarelo-escuro) !important;
-}
-
-.bg-amarelo-claro {
-	background: var(--amarelo-claro) !important;
-}
-
-.bg-amarelo {
-	background: var(--amarelo) !important;	
-}
-
-.bg-repeat {
-    background: url(../img/to-repeat.jpg);
-}
-
-.amarelo-claro {
-	color: var(--amarelo-claro) !important;
-}
-
-.amarelo-escuro {
-	color: var(--amarelo-escuro) !important;
-}
-
-.amarelo {
-	color: var(--amarelo) !important;
-}
-
-.branco {
-	color: var(--branco) !important;
-}
-
-.preto {
-	color: var(--preto) !important;
-}
+.amarelo { color: var(--amarelo); !important; }
+.roxo { color: var(--roxo); !important; }
+.laranja { color: var(--laranja); !important; }
+.branco { color: white; !important; }
+.preto { color: black; !important; }
 
 .image img {
 	width: 100%;
@@ -116,38 +70,22 @@ h6, h5, h4, h3, h2, h1 {
 }
 
 .btn-ingresso {
-    border-radius: 100px !important;
-    background: var(--branco) !important;
-    color: var(--roxo) !important;
+    background: var(--amarelo);
+    color: var(--roxo);
+    padding: 5px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    outline: 2px solid;
+    box-shadow: 3px 5px;
+    font-family: var(--pixelsplitter);
 }
 
 .btn-ingresso:hover {
-    background: var(--amarelo1) !important;
-    color: var(--roxo) !important;
+    transition: 1s all;
+    background-color: var(--roxo); !important;
+    color: white !important;
 }
-
-.fl {
-	background-image: url(../img/fl.svg);
-    background-repeat: no-repeat;
-    background-position: -50rem 2rem;
-    width: 1500px;
-    height: 700px;
-    position: absolute;
-    z-index: -1;
-}
-
-.fr {
-    background-image: url(../img/fr.svg);
-    background-repeat: no-repeat;
-    background-position: 18rem -12rem;
-    width: 1120px;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-}
-
 
 .stands {
     margin: 0 auto;
@@ -159,15 +97,6 @@ h6, h5, h4, h3, h2, h1 {
 footer a {
 	color: var(--branco);
 	text-decoration: none;
-}
-
-a:hover, a .preto:hover {
-	color: var(--amarelo) !important;
-	transition: 0.2s all;
-}
-
-a.btn.bg-amarelo-escuro.branco.mb-1:hover {
-    background: black !important;
 }
 
 .icon-foot {
@@ -200,24 +129,12 @@ a.btn.bg-amarelo-escuro.branco.mb-1:hover {
     font-weight: bolder;
 }
 
-.apoio {
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 50%;
-    margin: auto;
-}
-
-.apoio:hover {
-	box-shadow: 1px 1px 10px 0px var(--amarelo);
-}
-
 .nav-shadow {
 	box-shadow: 0px 3px var(--amarelo-escuro) !important;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--roxo); !important;
+    color: var(--roxo) !important;
     font-weight: 600;
     padding-right: 25px;
 }
@@ -243,24 +160,20 @@ a.btn.bg-branco.roxo.mb-1:hover {
     background-position: center;
 }
 
-.bat {
-	background-image: url("../img/icon-bat.png");
-	background-size: contain !important;
-}
-
+.bat { background-image: url("../img/icon-bat.png"); background-size: contain !important; }
 .mic { background-image: url("../img/icon-mic.png"); }
-
 .stand { background-image: url("../img/icon-stand.png"); }
-
 .dance { background-image: url("../img/icon-dance.png"); }
-
 .artist { background-image: url("../img/icon-artist.png"); }
-
 .staff { background-image: url("../img/icon-staff.png"); }
-
 .maid { background-image: url("../img/icon-maid.png"); }
-
 .pokemon { background-image: url("../img/icon-pokemon.png"); }
+
+.banner-home {
+    background-image: url("../img/banner-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .copy {
 	font-size: 22px;
@@ -323,16 +236,13 @@ section {
 #timer span {
     display: block;
     font-size: 5.5rem;
-    font-family: var(--gagalin);
+    font-family: var(--impact);
 }
 
 .time-shadow {
-    box-shadow: 3px 3px 0 5px var(--amarelo1);
+    box-shadow: 3px 3px 0 5px white;
 }
 
-.img-apoiadores {
-    padding: 0px 140px 40px;
-}
 
 .card-link {
     background: white;
@@ -350,43 +260,11 @@ section {
     transition: 0.2s all;
 }
 
-#linkstree {
-    padding: 50px 0px !important;
-}
-
-#linkstree a {
-    text-decoration: none;
-    font-size: 16px;
-}
-
-#linkstree a:hover {
-    transition: 0.1s all !important;
-}
-
-@media (max-width: 991px) {
-    .img-apoiadores {
-        padding: 0px 0px 20px;
-    }
-} 
 
 @media (max-width: 768px) {
-    .fl {
-        display: none !important;
-        /*
-		background-position: -80rem 12rem !important;
-        width: 100% !important;
-        height: 100% !important;
-        */
-	}
-	.fr {
-		background-position: 23rem -13rem !important;
-	}
-	.ani {
-		display: none !important;
-	}
-	.ani-chan {
-		display: flex;
-	}
+    .banner-home {
+        background-image: url("../img/banner-desktop2.png");
+    }
 	#edicoes .px-4 {
 	    padding-right: 3.5rem !important;
 	    padding-left: 3.5rem !important;
