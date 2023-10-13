@@ -28,7 +28,7 @@ body {
 }
 
 .h6, .h5, .h4, .h3, .h2, .h1 {
-    font-family: var(--impact) !important;
+    font-family: "Arial" !important;
 }
 
 .edicao-5 {
@@ -48,8 +48,9 @@ a:hover {
 }
 
 h6, h5, h4, h3, h2, h1 {
-    font-family: var(--impact) !important;
-    text-transform: uppercase;
+    font-family: "Arial" !important;
+    text-transform: uppercase !important;
+    letter-spacing: -1px !important;
 }
 
 /*BG E CORES*/
