@@ -15,7 +15,7 @@ body {
 }
 
 .impact {
-	font-family: var(--impact);
+	font-family: var(--impact) !important;
     text-transform: uppercase;
 }
 
@@ -24,17 +24,18 @@ body {
 }
 
 .pixelsplitter {
-    font-family: var(--pixelsplitter);
+    font-family: var(--pixelsplitter) !important;
 }
 
 .h6, .h5, .h4, .h3, .h2, .h1 {
-    font-family: "Arial" !important;
+    font-family: var(--impact) !important;
 }
 
 .edicao-5 {
     font-family: var(--pixelsplitter);
     font-size: 35px;
     text-transform: uppercase;
+    text-shadow: 3px 3px var(--roxo);
 }
 
 .title-home {
@@ -53,15 +54,15 @@ h6, h5, h4, h3, h2, h1 {
 
 /*BG E CORES*/
 .bg-branco { background: white !important; }
-.bg-amarelo { background: var(--amarelo); !important; }
+.bg-amarelo { background: var(--amarelo) !important; }
 .bg-laranja { background: var(--laranja) !important; }
 .bg-roxo { background: var(--roxo) !important; }
 
-.amarelo { color: var(--amarelo); !important; }
-.roxo { color: var(--roxo); !important; }
-.laranja { color: var(--laranja); !important; }
-.branco { color: white; !important; }
-.preto { color: black; !important; }
+.amarelo { color: var(--amarelo) !important; }
+.roxo { color: var(--roxo) !important; }
+.laranja { color: var(--laranja) !important; }
+.branco { color: white !important; }
+.preto { color: black !important; }
 
 .image img {
 	width: 100%;
@@ -83,7 +84,7 @@ h6, h5, h4, h3, h2, h1 {
 
 .btn-ingresso:hover {
     transition: 1s all;
-    background-color: var(--roxo); !important;
+    background-color: var(--roxo) !important;
     color: white !important;
 }
 
@@ -175,6 +176,10 @@ a.btn.bg-branco.roxo.mb-1:hover {
     background-repeat: no-repeat;
 }
 
+.ani-home {
+    width: 500px;
+}
+
 .copy {
 	font-size: 22px;
     font-weight: lighter;
@@ -241,8 +246,24 @@ section {
 
 .time-shadow {
     box-shadow: 3px 3px 0 5px white;
+    background-image: url(../img/calendar.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 35% !important;
+    background-position-x: -25% !important;
+    position: relative;
+    overflow: hidden;
 }
 
+.star-timer {
+    position: absolute;
+    top: 30%;
+    right: -20%;
+    width: 40%;
+}
+
+.chamada-head {
+    text-shadow: 0px 7px 20px black;
+}
 
 .card-link {
     background: white;
@@ -260,8 +281,20 @@ section {
     transition: 0.2s all;
 }
 
+@media (max-width: 992px) {
+    .btn-ingresso {
+        font-size: 15px !important;
+    }
+}
 
 @media (max-width: 768px) {
+    .star-timer {
+        top: 60%;
+        width: 35%;
+    }
+    .btn-ingresso {
+        font-size: 15px !important;
+    }
     .banner-home {
         background-image: url("../img/banner-desktop2.png");
     }
