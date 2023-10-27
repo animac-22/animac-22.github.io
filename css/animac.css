@@ -221,8 +221,13 @@ section {
     padding-bottom: 7rem !important;
 }
 
+.btn.bg-roxo.branco:hover {
+    background: var(--amarelo) !important;
+    color: var(--roxo) !important;
+}
+
 .disable {
-	background: var(--roxo);
+	background: grey;
     color: white;
     cursor: no-drop;
 }
