@@ -314,6 +314,14 @@ section {
     #timer span {
         font-size: 3.5rem;
     }
+    .stands {
+        width: 100px;
+        height: 100px;
+    }
+    .div-circle {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (max-width: 640px) {

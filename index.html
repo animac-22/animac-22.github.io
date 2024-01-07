@@ -47,11 +47,9 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <!-- 
-                        <li class="nav-item"><a class="nav-link" href="#inscricoes">Resultados</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#stands">Stands</a></li>
-                        -->
+                        <!-- <li class="nav-item"><a class="nav-link" href="#inscricoes">Resultados</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#inscricoes">Inscrições</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stands">Stands</a></li>
                         <li class="nav-item"><a class="nav-link" href="#edicoes">Fotos</a></li>
                         <li class="nav-item"><a class="nav-link" href="#local">Localização</a></li>
                     </ul>
@@ -135,8 +133,10 @@
                                     <div class="card">
                                       <div class="card-body">
                                         <h5 class="card-title">Artist's Alley</h5>
-                                        <p class="card-text">Venha mostrar sua arte no nosso evento!</p>
-                                        <a href="#" class="btn disable mb-1">Encerrado!</a>
+                                        <a type="button" class="laranja" data-toggle="modal" data-target="#artistsmodal">
+                                            &#9658; Conferir Artistas Selecionados!
+                                        </a><br>
+                                        <a href="#" class="btn disable mt-1 mb-1">Incrição Encerrada!</a>
                                       </div>
                                     </div>
                                 </div>
@@ -148,8 +148,10 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h5 class="card-title">Concurso Kpop</h5>
-                                    <p class="card-text">Gosta de dançar? Confira as regras para o dia do evento!</p>
-                                    <a href="#" class="btn disable mb-1">Encerrado!</a>
+                                    <a type="button" class="laranja" data-toggle="modal" data-target="#kpopmodal">
+                                            &#9658; Conferir Duplas Inscritas!
+                                    </a><br>
+                                    <a href="#" class="btn disable mt-1 mb-1">Incrição Encerrada!</a>
                                   </div>
                                 </div>
                               </div>
@@ -158,22 +160,24 @@
                                 <div class="card">
                                   <div class="card-body">
                                     <h5 class="card-title">Stands</h5>
-                                    <p class="card-text">Confira as regras para comercializar no nosso evento.</p>
-                                    <a href="#" class="btn disable mb-1">Encerrado!</a>
+                                    <a href="#stands" class="laranja">
+                                            &#9658; Conferir Stands Selecionados!
+                                    </a><br>
+                                    <a href="#" class="btn disable mt-1 mb-1">Incrição Encerrada!</a>
                                   </div>
                                 </div>
                               </div>
                               
                             </div>
+                        </div>                  
 
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!--
-        <section id="stands">
+
+        <section id="stands" class="bg-laranja">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-9">
@@ -181,68 +185,68 @@
 
                         <div class="container text-center mt-4">
                             <div class="row">
-                                <div class="col-sm-4 p-2">
+                                <div class="col-4 p-2">
                                     <div class="div-circle">
-                                        <a href="https://www.instagram.com/yumecostumes/" target="_blanck">
-                                            <img class="stands" src="img/stands/yume.png">
+                                        <a href="https://www.instagram.com/loki_store_22/" target="_blanck">
+                                            <img class="stands" src="img/stands/loki.png">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 p-2">
-                                    <div class="div-circle">
-                                        <a href="https://www.instagram.com/solarageek/" target="_blanck">
-                                            <img class="stands" src="img/stands/solara.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 p-2">
-                                    <div class="div-circle">
-                                        <a href="https://www.instagram.com/oreinonerd/" target="_blanck">
-                                            <img class="stands" src="img/stands/reinonerd.png">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 p-2">
-                                    <div class="div-circle">
-                                        <a href="https://www.instagram.com/xxisebo/" target="_blanck">
-                                            <img class="stands" src="img/stands/sebo.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 p-2">
-                                    <div class="div-circle">
-                                        <a href="https://www.instagram.com/khynkageek/" target="_blanck">
-                                            <img class="stands" src="img/stands/khynka.png">
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-4 p-2">
-                                    <div class="div-circle">
-                                        <a href="https://www.instagram.com/megeekstore/" target="_blanck">
-                                            <img class="stands" src="img/stands/megeek.png">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 p-2">
+                                <div class="col-4 p-2">
                                     <div class="div-circle">
                                         <a href="https://www.instagram.com/imperionatal/" target="_blanck">
                                             <img class="stands" src="img/stands/imperio.png">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 p-2">
+                                <div class="col-4 p-2">
                                     <div class="div-circle">
-                                        <a href="https://www.instagram.com/geekfuryoficial/" target="_blanck">
-                                            <img class="stands" src="img/stands/geek.png">
+                                        <a href="https://www.instagram.com/sugarmoonloja/" target="_blanck">
+                                            <img class="stands" src="img/stands/sugarmoon.png">
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-sm-4 p-2">
+
+                                <div class="col-4 p-2">
                                     <div class="div-circle">
                                         <a href="https://www.instagram.com/newprint.store/" target="_blanck">
                                             <img class="stands" src="img/stands/newprint.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div class="div-circle">
+                                        <a href="https://www.instagram.com/theslotgeek/" target="_blanck">
+                                            <img class="stands" src="img/stands/tsg.png">
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="col-4 p-2">
+                                    <div class="div-circle">
+                                        <a href="https://www.instagram.com/khynkageek/" target="_blanck">
+                                            <img class="stands" src="img/stands/khynka.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div class="div-circle">
+                                        <a href="https://www.instagram.com/xwantedstore/" target="_blanck">
+                                            <img class="stands" src="img/stands/wanted.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div class="div-circle">
+                                        <a href="https://www.instagram.com/oreinonerd/" target="_blanck">
+                                            <img class="stands" src="img/stands/reinonerd.png">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-2">
+                                    <div class="div-circle">
+                                        <a href="https://www.instagram.com/oquequeremosloja/" target="_blanck">
+                                            <img class="stands" src="img/stands/oquequeremos.png">
                                         </a>
                                     </div>
                                 </div>
@@ -253,7 +257,6 @@
                 </div>
             </div>
         </section>
-        -->
 
         <section id="edicoes" class="bg-roxo">
             <div class="container px-4">
@@ -398,6 +401,162 @@
                 ANIMAC 2023 | Todos Direitos Reservados &copy;
             </p></strong>
         </div>
+
+         <!-- Modal ARTIST'S ALLEY-->
+        <div class="modal fade" id="artistsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-laranja">
+                <h5 class="modal-title branco" id="artistsmodal">Selecionados ARTIST'S ALLEY</h5>
+                <button type="button" class="close btn branco" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Instagram</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Ronicleyton Oliveira</td>
+                      <td>@rony_oliveeira</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Raphael Soares</td>
+                      <td>@raphi_229</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Ísis Paiva</td>
+                      <td>@nonykko</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Thayná Almeida</td>
+                      <td>@thay_almeida.art</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Anny Gabrielli</td>
+                      <td>@brielli_arts</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal KPOP -->
+        <div class="modal fade" id="kpopmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-laranja">
+                <h5 class="modal-title branco" id="kpopmodal">Duplas Inscritas</h5>
+                <button type="button" class="close btn branco" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <table class="table">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Nome do Grupo</th>
+                      <th scope="col">Integrantes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Lyn & Gab</td>
+                      <td>Gab e Lyn</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>EX'OVER</td>
+                      <td>Trice e Iara</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Pop-Up!</td>
+                      <td>Leo e Maki</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td>Serpens</td>
+                      <td>TALY e Nizzy</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td>Clara e Jad</td>
+                      <td>Jad e Maria Alves</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td>MYST Dance Group</td>
+                      <td>Mia  e MC</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td>Myst Girls</td>
+                      <td>Sona e Lia </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td>Hydrangeas</td>
+                      <td>Lyss e Lyra</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td>Cheias de Charme</td>
+                      <td>Analu e Melina</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">10</th>
+                      <td>Ice e Flan</td>
+                      <td>Ice e Flan</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">11</th>
+                      <td>S'MORE</td>
+                      <td>Cecília e Mariana</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">12</th>
+                      <td>Red dream</td>
+                      <td>Gio e CL</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">13</th>
+                      <td>Taurus</td>
+                      <td>Vivi e Marcia</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">14</th>
+                      <td><s>Doug & Rick</s></td>
+                      <td><s>Doug e Rick</s></td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">15</th>
+                      <td><s>Outbreak</s></td>
+                      <td><s>Yasmin e Chriz</s></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <!-- DIVS IMG MODAL -->
         <div class="modal" id="img01" tabindex="-1" role="dialog" aria-labelledby="img01" aria-hidden="true">
