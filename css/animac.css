@@ -270,6 +270,9 @@ section {
 .chamada-head {
     text-shadow: 0px 7px 20px black;
 }
+.img-cobertura {
+    width: 200px;
+}
 
 .card-link {
     background: white;
