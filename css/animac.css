@@ -302,6 +302,11 @@ section {
     text-shadow: 8px 8px black;
 }
 
+.sobre {
+    font-size: 18px;
+    text-align: justify;
+}
+
 .card-link {
     background: white;
     width: 500px;
